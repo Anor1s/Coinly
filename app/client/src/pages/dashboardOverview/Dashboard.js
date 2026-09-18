@@ -2,16 +2,19 @@ import {
   CashStatus,
   Diagrams,
   RecentTransactions,
-  PageTemplate,
 } from "./Index.js";
 
 const Dashboard = {
   render() {
-    return PageTemplate.render([
-      CashStatus.render(),
-      Diagrams.render(),
-      RecentTransactions.render()
-    ]);
+    return `
+      <div class="w-full h-full overflow-y-auto p-[16px] tablet:px-[24px] flex flex-col gap-lg">
+        ${CashStatus.render()}
+        <div class="flex flex-col laptop:flex-row gap-lg">
+          ${Diagrams.render()}
+          ${RecentTransactions.render()}
+        </div>
+      </div>
+    `;
   },
 
   init() {

@@ -3,12 +3,9 @@ import { Item, SummaryService, ItemsData } from '../Index.js';
 const List = {
   render() {
     return `
-      <div class="h-full w-full">
-        <ul id="overview-cards-list" class="h-full grid grid-cols-1 mobile:grid-cols-2 
-            laptop:grid-cols-1 gap-[16px]">
-          <li class="text-text-secondary animate-pulse p-4">Loading stats...</li>
-        </ul>
-      </div>  
+      <ul id="overview-cards-list" class="grid grid-cols-2 tablet:grid-cols-3 laptop:grid-cols-5 gap-base">
+        <li class="col-span-full text-text-tertiary animate-pulse p-4">Loading stats...</li>
+      </ul>
     `;
   },
 
@@ -24,7 +21,6 @@ const List = {
 
     await this.updateCards();
   },
-
   async updateCards() {
     const listElement = document.getElementById('overview-cards-list');
     if (!listElement) return;
@@ -39,7 +35,7 @@ const List = {
 
     } catch (error) {
       console.error("Dashboard List Error:", error);
-      listElement.innerHTML = `<li class="text-red-400 p-4">Error loading data</li>`;
+      listElement.innerHTML = `<li class="col-span-full text-text-accent p-4">Error loading data</li>`;
     }
   }
 };
