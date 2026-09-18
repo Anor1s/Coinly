@@ -7,7 +7,7 @@ export { default as SortBy } from './transactionComponents/filterSectionComponen
 
 export { default as TableIncomeIcon } from '../../assets/icons/transaction/Income.svg'
 export { default as TableExpenseIcon } from '../../assets/icons/transaction/Expense.svg'
-export { default as AddTransactionIcon } from '../../assets/icons/navigation/menu/NewTransaction.svg'
+export const AddTransactionIcon = `${import.meta.env.BASE_URL}/dashboardOverviewIcons/AddTransaction.svg`;
 
 export { default as NoTransactionsFound } from '../../assets/icons/transaction/NoTransactionsFound.svg';
 
