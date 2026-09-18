@@ -1,14 +1,12 @@
-import { PageTemplate, Login, SignUp } from './index.js';
+import { Login, SignUp } from './index.js';
 
 const Accounts = {
   currentView: 'login',
 
   render() {
-    const activeForm = this.currentView === 'login'
+    return this.currentView === 'login'
       ? Login.render()
       : SignUp.render();
-
-    return PageTemplate.render([activeForm]);
   },
 
   init() {

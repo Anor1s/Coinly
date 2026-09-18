@@ -4,10 +4,10 @@ import  { AsideLogo, AsideNav } from './index.js';
 const Aside = {
   render() {
     return `
-      <aside 
-        class="h-full fixed left-0 top-0 z-30 w-[75px] p-[16px] laptop:px-[32px]
-              border-r border-surface
-              tablet:w-[150px] laptop:w-[240px] desktop:w-[325px] text-sm 
+      <aside
+        class="h-full fixed left-0 top-0 z-30 w-[75px] p-[16px] laptop:px-[24px]
+              bg-surface border-r border-surface-secondary
+              tablet:w-[150px] laptop:w-[240px] desktop:w-[325px] text-sm
               tablet:text-base desktop:text-2xl"
         >
         <div 
