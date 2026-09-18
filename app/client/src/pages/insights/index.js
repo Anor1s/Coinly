@@ -6,16 +6,16 @@ export { default as SelectButtonCreate } from '../../components/templates/button
 
 export { InitManagerCreate, InitManagerClear } from '../../components/other/Utilities.js'
 
-export { default as DateTimePresetsButton } from './analyticsComponents/timeFilterButtons/buttons/DateTimePresets.js'
-export { default as DateTimeFromButton } from './analyticsComponents/timeFilterButtons/buttons/DateTimeFrom.js'
-export { default as DateTimeToButton } from './analyticsComponents/timeFilterButtons/buttons/DateTimeTo.js'
+export { default as DateTimePresetsButton } from './insightsComponents/timeFilterButtons/buttons/DateTimePresets.js'
+export { default as DateTimeFromButton } from './insightsComponents/timeFilterButtons/buttons/DateTimeFrom.js'
+export { default as DateTimeToButton } from './insightsComponents/timeFilterButtons/buttons/DateTimeTo.js'
 
-export { default as FilterButtonsList } from './analyticsComponents/timeFilterButtons/FilterButtonsList.js';
-export { default as FilterButtonsItem } from './analyticsComponents/timeFilterButtons/FilterButtonsItem.js';
-export { default as FilterButtonsData } from './analyticsComponents/timeFilterButtons/FilterButtonsData.js';
-export { default as FilterButtonsGetData } from './analyticsComponents/timeFilterButtons/FilterButtonsGetData.js';
+export { default as FilterButtonsList } from './insightsComponents/timeFilterButtons/FilterButtonsList.js';
+export { default as FilterButtonsItem } from './insightsComponents/timeFilterButtons/FilterButtonsItem.js';
+export { default as FilterButtonsData } from './insightsComponents/timeFilterButtons/FilterButtonsData.js';
+export { default as FilterButtonsGetData } from './insightsComponents/timeFilterButtons/FilterButtonsGetData.js';
 
-export { default as DateTimePresetManager } from './analyticsComponents/timeFilterButtons/DateTimePresetManager.js'
+export { default as DateTimePresetManager } from './insightsComponents/timeFilterButtons/DateTimePresetManager.js'
 
 export { default as PieChartCreate } from '../../components/templates/chartsTemplate/charts/PieChartCreate.js'
 export { default as HorizontalBarChartCreate } from '../../components/templates/chartsTemplate/charts/HorizontalBarChartCreate.js'

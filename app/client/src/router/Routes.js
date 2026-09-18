@@ -1,6 +1,6 @@
 import {
   Dashboard,
-  Analytics,
+  Insights,
   Transactions,
   AddTransaction,
   Settings,
@@ -18,8 +18,8 @@ const Routes = {
     title: 'Dashboard Overview',
     requiresAuth: true
   },
-  '/analytics': {
-    component: Analytics,
+  '/insights': {
+    component: Insights,
     title: 'Analytics',
     requiresAuth: true
   },

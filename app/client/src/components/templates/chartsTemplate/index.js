@@ -9,4 +9,4 @@ export { default as ChartStore }  from '../../../stores/ChartStore.js';
 
 export { default as CategoryButtonData }  from '../../../components/buttonsData/CategoryButtonData.js';
 
-export { default as FilterButtonsGetData } from '../../../pages/analytics/analyticsComponents/timeFilterButtons/FilterButtonsGetData.js';
+export { default as FilterButtonsGetData } from '../../../pages/insights/insightsComponents/timeFilterButtons/FilterButtonsGetData.js';

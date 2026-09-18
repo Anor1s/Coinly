@@ -1,5 +1,5 @@
 export { default as Dashboard } from '../pages/dashboardOverview/Dashboard.js';
-export { default as Analytics } from '../pages/analytics/Analytics.js';
+export { default as Insights } from '../pages/insights/Insights.js';
 export { default as Transactions } from '../pages/transactions/Transactions.js';
 export { default as AddTransaction } from '../pages/addTransactions/AddTransaction.js';
 export { default as Settings } from '../pages/settings/Settings.js';

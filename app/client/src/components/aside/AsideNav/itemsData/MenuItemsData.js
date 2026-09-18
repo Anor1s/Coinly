@@ -11,7 +11,7 @@ const MenuItemsData = [
     icon: AnalyticsIcon,
     text: 'Analytics',
     alt: 'Analytics icon',
-    href: '/analytics',
+    href: '/insights',
   },
   {
     icon: TransactionsIcon,

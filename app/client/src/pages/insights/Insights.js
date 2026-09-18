@@ -5,7 +5,7 @@ import {
   PieAndAsdChartsSection,
 } from './index.js'
 
-const Analytics = {
+const Insights = {
   render() {
     return PageTemplate.render([
       FiltersAndDiagramsContainer.render(),
@@ -32,6 +32,6 @@ window.updateTransactionFilters = () => {
   if (window.HorizontalBarChartInstance) window.HorizontalBarChartInstance.updateChart();
 };
 
-export default Analytics;
+export default Insights;
 
 
