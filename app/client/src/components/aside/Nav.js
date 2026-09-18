@@ -3,10 +3,10 @@ import { AsideMenuNav, AsideOtherNav } from "./index.js";
 const Nav = {
   render() {
     return `
-      <nav class="flex flex-col justify-between h-full w-full">
+      <div class="flex items-center justify-between w-full gap-base overflow-x-auto">
         ${AsideMenuNav.render()}
         ${AsideOtherNav.render()}
-      </nav>
+      </div>
     `;
   }
 };

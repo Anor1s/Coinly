@@ -1,4 +1,4 @@
-import { OverviewIcon, AnalyticsIcon, TransactionsIcon, AddTransactionIcon } from "../../index.js"
+import { OverviewIcon, AnalyticsIcon, TransactionsIcon } from "../../index.js"
 
 const MenuItemsData = [
   {
@@ -18,12 +18,6 @@ const MenuItemsData = [
     text: 'Transactions',
     alt: 'Transactions icon',
     href: '/transactions',
-  },
-  {
-    icon: AddTransactionIcon,
-    text: 'Add Transaction',
-    alt: 'Investments Transaction',
-    href: '/add-transaction',
   }
 ];
 

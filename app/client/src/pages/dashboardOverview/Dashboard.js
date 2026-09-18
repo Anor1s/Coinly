@@ -7,7 +7,7 @@ import {
 const Dashboard = {
   render() {
     return `
-      <div class="w-full h-full overflow-y-auto p-[16px] tablet:px-[24px] flex flex-col gap-lg">
+      <div class="w-full p-[16px] tablet:px-[24px] flex flex-col gap-lg">
         ${CashStatus.render()}
         <div class="flex flex-col laptop:flex-row gap-lg">
           ${Diagrams.render()}

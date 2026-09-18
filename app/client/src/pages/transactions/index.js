@@ -7,6 +7,7 @@ export { default as SortBy } from './transactionComponents/filterSectionComponen
 
 export { default as TableIncomeIcon } from '../../assets/icons/transaction/Income.svg'
 export { default as TableExpenseIcon } from '../../assets/icons/transaction/Expense.svg'
+export { default as AddTransactionIcon } from '../../assets/icons/navigation/menu/NewTransaction.svg'
 
 export { default as NoTransactionsFound } from '../../assets/icons/transaction/NoTransactionsFound.svg';
 
@@ -64,6 +65,8 @@ export { default as TablePagination } from './transactionComponents/transactionS
 
 export { default as TransactionFilters } from './transactionComponents/Filters.js';
 export { default as TransactionsSection } from './transactionComponents/TransactionsSection.js';
+
+export { default as AddTransactionModal } from '../addTransactions/AddTransactionModal.js';
 
 export { default as Dialog } from '../../components/other/Dialog.js'
 

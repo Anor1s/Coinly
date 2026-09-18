@@ -36,15 +36,13 @@ window.addEventListener('load', () => {
 function renderAppLayout(title = 'Coinly') {
   const app = document.getElementById('app');
   app.innerHTML = `
-    <div class="flex flex-col h-screen overflow-auto">
+    <div class="flex flex-col h-screen overflow-hidden">
+        ${Aside.render()}
         ${Header.render(title)}
-        <div class="h-full flex min-h-0">
-          ${Aside.render()}
-          <main
-            id="main-content"
-            class="h-full flex-1 ml-[75px] tablet:ml-[150px] laptop:ml-[240px] desktop:ml-[325px]">
-          </main>
-        </div>
+        <main
+          id="main-content"
+          class="flex-1 min-h-0 overflow-y-auto">
+        </main>
       </div>
   `;
 }

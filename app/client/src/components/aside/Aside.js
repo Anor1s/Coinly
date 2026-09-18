@@ -4,23 +4,16 @@ import  { AsideLogo, AsideNav } from './index.js';
 const Aside = {
   render() {
     return `
-      <aside
-        class="h-full fixed left-0 top-0 z-30 w-[75px] p-[16px] laptop:px-[24px]
-              bg-surface border-r border-surface-secondary
-              tablet:w-[150px] laptop:w-[240px] desktop:w-[325px] text-sm
-              tablet:text-base desktop:text-2xl"
+      <nav
+        class="w-full sticky top-0 z-30 min-h-[64px] px-[16px] tablet:px-[24px]
+              bg-sidebar-bg text-sidebar-text
+              flex items-center gap-base"
         >
-        <div 
-          class="flex flex-col justify-between h-full gap-[40px] tablet:gap-[30px] 
-          ">
-          ${AsideLogo.render()}
-          ${AsideNav.render()}
-        </div>
-      </aside>
+        ${AsideLogo.render()}
+        ${AsideNav.render()}
+      </nav>
     `;
   },
 };
 
 export default Aside;
-
-

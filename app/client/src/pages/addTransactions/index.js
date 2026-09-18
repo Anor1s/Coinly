@@ -8,6 +8,7 @@ export { default as TextButtonCreate } from '../../components/templates/buttonsT
 
 export { default as IncomeIcon } from '../../assets/icons/transaction/Income.svg'
 export { default as ExpenseIcon } from '../../assets/icons/transaction/Expense.svg'
+export { default as CloseIcon } from '../../assets/icons/transaction/modal/Close.svg'
 
 export { default as AmountButton } from './addTransactionComponents/addTransactionButtons/buttons/Amount.js'
 export { default as CurrencyButton } from './addTransactionComponents/addTransactionButtons/buttons/Currency.js'
@@ -18,6 +19,7 @@ export { default as TransactionPlaceButton } from './addTransactionComponents/ad
 
 export { default as NoteTextarea } from './addTransactionComponents/addTransactionOther/DetailNote.js';
 export { default as AddTransactionDetails } from './pageSections/AddTransactionDetails.js';
+export { default as AddTransactionModal } from './AddTransactionModal.js';
 
 export { default as DetailButtonsItem } from './addTransactionComponents/addTransactionButtons/DetailButtonsItem.js';
 export { default as DetailButtonsList } from './addTransactionComponents/addTransactionButtons/DetailButtonsList.js';

@@ -13,28 +13,27 @@ const NavItem = {
         }
       }
     }
-    
+
     return `
-      <li class="w-full ">
-        <a 
-          href="${item.href}" 
-          class=" flex justify-center laptop:justify-start items-center p-[8px] rounded-lg pointer w-full
-                 laptop:gap-sm desktop:gap-[16px] ${itemClasses}" 
+      <li>
+        <a
+          href="${item.href}"
+          class="flex items-center gap-xs px-[12px] tablet:px-[16px] h-[40px] rounded-full whitespace-nowrap ${itemClasses}"
           data-link
           >
           <img
-            class="group-hover:brightness-0 tablet:w-[32px] tablet:h-[32px] laptop:h-[24px] laptop:w-[24px]"  
+            class="group-hover:brightness-0 w-[18px] h-[18px] tablet:w-[20px] tablet:h-[20px]"
             data-icon-link
             src="${item.icon}"
             alt="${item.alt}"
-            width="24"
-            height="24"
+            width="20"
+            height="20"
             loading="lazy"
             aria-hidden="true"
           />
-          <span 
-            class="group-hover:text-black transition-colors duration-200 
-                    hidden laptop:block  "
+          <span
+            class="group-hover:text-black transition-colors duration-200
+                    hidden tablet:block text-sm tablet:text-base"
           >
             ${item.text}
           </span>

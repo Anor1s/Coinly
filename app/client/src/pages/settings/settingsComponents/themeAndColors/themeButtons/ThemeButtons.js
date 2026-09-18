@@ -9,7 +9,7 @@ const ThemeButtons = {
           aria-labelledby="theme-label">
           <li class="my-auto h-[30px] w-[30px]">
             <button
-              class="h-full w-full theme-button theme-active border-3 rounded-full text-black border-black"
+              class="h-full w-full theme-button theme-active border-3 rounded-full text-text-primary border-text-primary"
               id="dark-theme-button"
               title="Dark Theme"
               type="button"
@@ -21,7 +21,7 @@ const ThemeButtons = {
     
           <li class="my-auto h-[30px] w-[30px]">
             <button
-              class="h-full w-full theme-button border-3 rounded-full text-white border-white"
+              class="h-full w-full theme-button border-3 rounded-full text-text-primary border-text-primary"
               id="light-theme-button"
               title="Light Theme"
               type="button"

@@ -2,7 +2,6 @@ import {
   Dashboard,
   Insights,
   Transactions,
-  AddTransaction,
   Settings,
   Profile
 } from './index.js';
@@ -26,11 +25,6 @@ const Routes = {
   '/transactions': {
     component: Transactions,
     title: 'Transactions',
-    requiresAuth: true
-  },
-  '/add-transaction': {
-    component: AddTransaction,
-    title: 'Add Transaction',
     requiresAuth: true
   },
   '/settings': {

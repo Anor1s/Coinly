@@ -21,8 +21,8 @@ const Item = {
     }
 
     return `
-      <li class="flex flex-col gap-4 bg-surface border border-surface-secondary rounded-2xl p-5">
-        <div class="w-10 h-10 rounded-xl gradient-primary flex items-center justify-center shrink-0">
+      <li class="flex flex-col gap-4 bg-surface border-2 border-text-primary rounded-lg p-5">
+        <div class="w-10 h-10 rounded-md gradient-primary flex items-center justify-center shrink-0">
           <div
             class="w-5 h-5 bg-text-secondary"
             style="-webkit-mask: url('${item.icon}') no-repeat center / contain;
@@ -31,7 +31,7 @@ const Item = {
         </div>
         <div class="flex flex-col gap-1">
           <span class="text-xs text-text-tertiary uppercase tracking-wide">${item.heading}</span>
-          <span class="text-xl font-bold text-text-primary">
+          <span class="text-2xl font-bold text-text-primary">
             <span class="text-text-tertiary font-medium mr-1">${item.currency}</span>${formattedValue}
           </span>
         </div>

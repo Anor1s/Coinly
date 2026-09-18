@@ -3,12 +3,9 @@ import { AsideNavItem, MenuItemsData } from '../../index.js';
 const MenuList = {
   render() {
     return `
-      <div class=" w-full" >
-        <h3 class="w-full text-center laptop:text-start uppercase mb-[8px] font-bold">Menu</h3>
-        <ul class="flex flex-col justify-center gap-base w-full">
-          ${MenuItemsData.map(item => AsideNavItem.render(item)).join('\n')}
-        </ul>
-      </div>
+      <ul class="flex items-center gap-xs tablet:gap-sm">
+        ${MenuItemsData.map(item => AsideNavItem.render(item)).join('\n')}
+      </ul>
     `;
   }
 };
