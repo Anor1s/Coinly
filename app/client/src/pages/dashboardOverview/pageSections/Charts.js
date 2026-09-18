@@ -6,7 +6,7 @@ const StackedBarChartId = "dashboardStackedBarChart"
 const Charts = {
   render() {
     return `
-      <section class="w-full flex flex-col gap-sm laptop:w-3/5">
+      <section class="w-full flex flex-col gap-sm laptop:flex-[3] laptop:min-w-0">
         ${SectionHeading.render('Charts')}
         <div class="flex flex-col gap-base mobile:flex-row laptop:flex-col">
           <div class="h-[400px] laptop:h-[280px] w-full shrink-0">

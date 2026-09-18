@@ -17,7 +17,7 @@ const TransactionsSection = {
             class="flex items-center gap-xs px-[16px] h-button rounded-md gradient-primary text-text-secondary font-bold shrink-0"
           >
             <div
-              class="w-4 h-4 bg-text-secondary"
+              class="w-6 h-6 bg-text-secondary"
               style="-webkit-mask: url('${AddTransactionIcon}') no-repeat center / contain;
                       mask: url('${AddTransactionIcon}') no-repeat center / contain;"
             ></div>

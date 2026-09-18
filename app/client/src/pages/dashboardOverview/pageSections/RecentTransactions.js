@@ -2,7 +2,7 @@ import { SectionHeading, TableUi, TransactionsTable } from "../Index.js";
 const RecentTransactions  = {
   render() {
     return `
-      <section class="w-full flex flex-col gap-sm laptop:w-2/5">
+      <section class="w-full flex flex-col gap-sm laptop:flex-[2] laptop:min-w-0">
         ${SectionHeading.render('Recent Transactions')}
         <div class="h-[576px]">
           ${TableUi.renderMainLayout(false)}
