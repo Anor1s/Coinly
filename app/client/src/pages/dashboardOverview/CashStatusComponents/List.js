@@ -3,7 +3,7 @@ import { Item, SummaryService, ItemsData } from '../Index.js';
 const List = {
   render() {
     return `
-      <ul id="overview-cards-list" class="grid grid-cols-2 tablet:grid-cols-3 laptop:flex laptop:flex-col gap-sm">
+      <ul id="overview-cards-list" class="grid grid-cols-2 tablet:grid-cols-3 laptop:grid-cols-5 gap-sm">
         <li class="col-span-full text-text-tertiary animate-pulse p-4">Loading stats...</li>
       </ul>
     `;

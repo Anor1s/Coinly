@@ -8,11 +8,11 @@ const Charts = {
     return `
       <section class="w-full flex flex-col gap-sm laptop:flex-[3] laptop:min-w-0">
         ${SectionHeading.render('Charts')}
-        <div class="flex flex-col gap-base mobile:flex-row laptop:flex-col">
-          <div class="h-[400px] laptop:h-[280px] w-full shrink-0">
+        <div class="flex flex-col gap-base mobile:flex-row">
+          <div class="h-[280px] mobile:flex-1 mobile:min-w-0">
             ${PieChartCreate.render(PieChartId)}
           </div>
-          <div class="h-[400px] laptop:h-[280px] w-full shrink-0">
+          <div class="h-[280px] mobile:flex-1 mobile:min-w-0">
             ${StackedBarChartCreate.render(StackedBarChartId)}
           </div>
         </div>

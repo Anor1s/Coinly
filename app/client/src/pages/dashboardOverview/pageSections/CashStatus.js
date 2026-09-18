@@ -3,7 +3,7 @@ import { SectionHeading, CardsList } from '../Index.js'
 const CashStatus = {
   render() {
     return `
-      <section class="w-full laptop:w-[260px] flex flex-col gap-sm shrink-0">
+      <section class="w-full flex flex-col gap-sm">
         ${SectionHeading.render('Cash Status')}
         ${CardsList.render()}
       </section>
