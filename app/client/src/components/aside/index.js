@@ -1,7 +1,5 @@
 export { default as AsideLogo } from './Logo.js';
 
-export { default as BrandIcon } from '../../assets/icons/Coinly.svg';
-
 export { default as OverviewIcon } from '../../assets/icons/navigation/menu/Overview.svg';
 export { default as AnalyticsIcon } from '../../assets/icons/navigation/menu/Analytics.svg';
 export { default as TransactionsIcon } from '../../assets/icons/navigation/menu/Transactions.svg';
