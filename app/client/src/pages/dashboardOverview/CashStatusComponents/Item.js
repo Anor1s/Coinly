@@ -21,18 +21,18 @@ const Item = {
     }
 
     return `
-      <li class="flex flex-col gap-4 bg-surface border-2 border-text-primary rounded-lg p-5">
-        <div class="w-10 h-10 rounded-md gradient-primary flex items-center justify-center shrink-0">
+      <li class="flex items-center gap-3 bg-surface border-2 border-text-primary rounded-lg px-4 py-3">
+        <div class="w-9 h-9 rounded-md gradient-primary flex items-center justify-center shrink-0">
           <div
-            class="w-5 h-5 bg-text-secondary"
+            class="w-4 h-4 bg-text-secondary"
             style="-webkit-mask: url('${item.icon}') no-repeat center / contain;
                     mask: url('${item.icon}') no-repeat center / contain;"
           ></div>
         </div>
-        <div class="flex flex-col gap-1">
-          <span class="text-xs text-text-tertiary uppercase tracking-wide">${item.heading}</span>
-          <span class="text-2xl font-bold text-text-primary">
-            <span class="text-text-tertiary font-medium mr-1">${item.currency}</span>${formattedValue}
+        <div class="flex flex-col min-w-0">
+          <span class="text-[11px] text-text-tertiary uppercase tracking-wide truncate">${item.heading}</span>
+          <span class="text-lg font-bold text-text-primary truncate">
+            <span class="text-text-tertiary font-medium mr-1 text-sm">${item.currency}</span>${formattedValue}
           </span>
         </div>
       </li>
