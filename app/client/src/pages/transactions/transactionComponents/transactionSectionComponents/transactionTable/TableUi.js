@@ -5,8 +5,8 @@ const TableUi = {
     return `
       <div class="h-full w-full flex flex-col ${withPagination ? 'gap-2' : ''}">
         <ul 
-          class="flex-1 w-full rounded-2xl gradient-secondary py-[16px] overflow-hidden relative 
-                   divide-y-2 divide-surface-secondary min-h-0" 
+          class="flex-1 w-full rounded-lg bg-surface border-2 border-text-primary py-[16px] overflow-hidden relative
+                   divide-y-2 divide-surface-secondary min-h-0"
           id="all-transactions-table">
         </ul>
           ${withPagination 

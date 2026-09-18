@@ -69,7 +69,7 @@ const PieChartCreate = {
       return {
         labels: categories.map(item => item.categoryDisplayName),
         values: categories.map(item => item.amount),
-        colors: ['#FF8FA3', '#6EC6FF', '#FFD966', '#66CFC7', '#B399FF', '#FFB366', '#FF6B6B', '#9EE86F']
+        colors: ['#22C55E', '#F43F5E', '#FACC15', '#0EA5E9', '#A855F7', '#FB923C', '#14B8A6', '#EC4899']
       };
     });
   },

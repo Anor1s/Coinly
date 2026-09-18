@@ -12,12 +12,12 @@ const ChartsTemplate = {
         class="chart-container h-full w-full relative min-h-[290px] 
              mobile:min-h-[400px] laptop:min-h-0 transition-all 
              duration-300 ease-in-out cursor-pointer">
-        <canvas 
-          id="${chartId}" 
-          class="absolute inset-0 gradient-secondary rounded-2xl p-[16px] transition-all duration-300"
+        <canvas
+          id="${chartId}"
+          class="absolute inset-0 bg-surface border-2 border-text-primary rounded-lg p-[16px] transition-all duration-300"
         ></canvas>
-        <div class="laptop:block hidden absolute bottom-[-10px] right-3 text-xs 
-                text-text-primary bg-background border-1 border-surface 
+        <div class="laptop:block hidden absolute bottom-[-10px] right-3 text-xs
+                text-text-primary bg-background border-1 border-surface
                 px-2 py-1 rounded">
           Click to minimize
         </div>

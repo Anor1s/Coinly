@@ -1,6 +1,8 @@
 export { default as SectionHeading } from '../../components/templates/pageTemplate/SectionHeading.js'
 export { default as PageTemplate } from '../../components/templates/pageTemplate/PageTemplate.js'
 
+export { default as CloseIcon } from '../../assets/icons/transaction/modal/Close.svg'
+
 export { default as DateTimeButtonCreate } from '../../components/templates/buttonsTemplate/dateTimeButton/DateTimeButtonCreate.js'
 export { default as SelectButtonCreate } from '../../components/templates/buttonsTemplate/selectButton/SelectButtonCreate.js'
 
@@ -16,6 +18,7 @@ export { default as FilterButtonsData } from './insightsComponents/timeFilterBut
 export { default as FilterButtonsGetData } from './insightsComponents/timeFilterButtons/FilterButtonsGetData.js';
 
 export { default as DateTimePresetManager } from './insightsComponents/timeFilterButtons/DateTimePresetManager.js'
+export { default as TimeRangeModal } from './insightsComponents/timeFilterButtons/TimeRangeModal.js'
 
 export { default as PieChartCreate } from '../../components/templates/chartsTemplate/charts/PieChartCreate.js'
 export { default as HorizontalBarChartCreate } from '../../components/templates/chartsTemplate/charts/HorizontalBarChartCreate.js'
