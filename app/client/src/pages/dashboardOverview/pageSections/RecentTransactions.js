@@ -4,7 +4,7 @@ const RecentTransactions  = {
     return `
       <section class="w-full flex flex-col gap-sm laptop:w-2/5">
         ${SectionHeading.render('Recent Transactions')}
-        <div class="min-h-[420px]">
+        <div class="h-[576px]">
           ${TableUi.renderMainLayout(false)}
         </div>
       </section>

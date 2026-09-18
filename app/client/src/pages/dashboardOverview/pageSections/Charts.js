@@ -9,10 +9,10 @@ const Charts = {
       <section class="w-full flex flex-col gap-sm laptop:w-3/5">
         ${SectionHeading.render('Charts')}
         <div class="flex flex-col gap-base mobile:flex-row laptop:flex-col">
-          <div class="flex-1 min-h-[280px] laptop:min-h-[260px]">
+          <div class="h-[280px] mobile:flex-1">
             ${PieChartCreate.render(PieChartId)}
           </div>
-          <div class="flex-1 min-h-[280px] laptop:min-h-[260px]">
+          <div class="h-[280px] mobile:flex-1">
             ${StackedBarChartCreate.render(StackedBarChartId)}
           </div>
         </div>

@@ -21,7 +21,7 @@ const TransactionsSection = {
               style="-webkit-mask: url('${AddTransactionIcon}') no-repeat center / contain;
                       mask: url('${AddTransactionIcon}') no-repeat center / contain;"
             ></div>
-            Add
+            Add New Transaction
           </button>
         </div>
         ${TransactionsTable.render()}
