@@ -69,7 +69,6 @@ const SelectButtonCreate = {
     document.addEventListener('click', (e) => {
       const target = e.target;
 
-      // Select button
       const btn = target.closest('.custom-select-button');
       if (btn) {
         const buttonId = btn.getAttribute('data-button-id');
@@ -84,7 +83,6 @@ const SelectButtonCreate = {
         return;
       }
 
-      // Option Button
       const optionBtn = target.closest('.option-btn');
       if (optionBtn) {
         const buttonId = optionBtn.getAttribute('data-button-id');

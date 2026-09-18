@@ -1,7 +1,6 @@
 const API_URL = `${import.meta.env.VITE_API_URL}/transactions`;
 
 const TransactionService = {
-  // Fetches all transactions for the current use
   async getAll(page = 1, limit = 20) {
     try {
       const response = await fetch(`${API_URL}/AllTransactions?page=${page}&limit=${limit}`, {
@@ -24,7 +23,6 @@ const TransactionService = {
     }
   },
 
-  // Sends a new transaction to the server
   async create(transactionData) {
     try {
       const response = await fetch(`${API_URL}/CreateTransaction`, {

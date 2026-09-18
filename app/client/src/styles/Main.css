@@ -2,14 +2,12 @@
 @plugin "tailwindcss-animate";
 
 @theme {
-  /* 1. Breakpoints */
   --breakpoint-mobile: 600px;
   --breakpoint-tablet: 768px;
   --breakpoint-laptop: 1200px;
   --breakpoint-chart: 1400px;
   --breakpoint-desktop: 1920px;
 
-  /* 2. Colors Mapping */
   --color-background: var(--background);
   --color-surface: var(--surface);
   --color-surface-response: var(--surface-response);
@@ -28,7 +26,6 @@
   --color-chart-savings-surface: var(--chart-savings-surface);
   --color-chart-savings-border: var(--chart-savings-border);
 
-  /* 3. Typography & Spacing */
   --font-family-primary: var(--font-primary);
   --text-xs: 12px;
   --text-base: 16px;
@@ -40,20 +37,17 @@
   --gap-base: 16px;
   --gap-lg: 32px;
 
-  /* 4. Custom Geometry */
   --height-include-top: calc(100dvh - var(--height-header) - var(--gap-base) * 2);
   --height-screen-pad: calc(100dvh - var(--gap-base) * 2);
   --height-button: var(--button-min-height);
   --height-button-container: var(--button-container-height);
   --opacity-icon: var(--icon-opacity);
 
-  /* 5. Gradients */
   --gradient-primary: var(--gradient-primary-color);
   --gradient-secondary: var(--gradient-secondary-color);
 }
 
 @layer base {
-  /* Fonts setup */
   @font-face {
     font-family: 'Archivo';
     src: url('../fonts/Archivo-Regular.woff2') format('woff2');
@@ -79,28 +73,27 @@
   }
 
   :root {
-    /* Light Theme (Variables) */
-    --background: #FFFFFF;
-    --surface: #C3C3C3;
-    --surface-response: #AFAFAF;
-    --surface-secondary: #B0B0B0;
-    --surface-secondary-response: #D6D6D6;
+    --background: #F5F5F7;
+    --surface: #FFFFFF;
+    --surface-response: #ECECF1;
+    --surface-secondary: #EEEEF2;
+    --surface-secondary-response: #E2E2E9;
 
-    --scrollbar-track: #BFBFBF;
-    --scrollbar-thumb: #9E9E9E;
-    --scrollbar-thumb-border: #BDBDBD;
+    --scrollbar-track: #E5E5EA;
+    --scrollbar-thumb: #C7C7D1;
+    --scrollbar-thumb-border: #D6D6DE;
 
-    --text-primary: #353535;
-    --text-secondary: #000000;
-    --text-tertiary: #1E1E1E;
+    --text-primary: #16161D;
+    --text-secondary: #FFFFFF;
+    --text-tertiary: #6B6B76;
     --text-accent: #DC2626;
 
     --chart-income-surface: #10B981BF;
     --chart-income-border: #064E3B;
-    --chart-expense-surface: #EF4444BF;
-    --chart-expense-border: #450A0A;
-    --chart-savings-surface: #3B82F6BF;
-    --chart-savings-border: #172554;
+    --chart-expense-surface: #F43F5EBF;
+    --chart-expense-border: #4C0519;
+    --chart-savings-surface: #6366F1BF;
+    --chart-savings-border: #1E1B4B;
 
     --icon-opacity: 100%;
     --font-primary: 'Archivo', sans-serif;
@@ -112,31 +105,15 @@
     --icon-invert: 0%;
     --icon-hover-invert: 0%;
 
-    /* Theme colors Logic */
-    /* Main / Neon */
-    --gradient-primary-first: #92FE9D;
-    --gradient-primary-second: #00C9FF;
+    --gradient-primary-first: #6366F1;
+    --gradient-primary-second: #A855F7;
 
-    --gradient-secondary-first: #00000010;
-    --gradient-secondary-second: #00000030;
+    --gradient-secondary-first: #00000008;
+    --gradient-secondary-second: #00000018;
 
-    /* Optional Theme Colors */
-    --gradient-neon-first: #92FE9D;
-    --gradient-neon-second: #00C9FF;
-
-    --gradient-gold-first: #D97706;
-    --gradient-gold-second: #FBBF24;
-
-    --gradient-ocean-first: #1D4ED8;
-    --gradient-ocean-second: #3B82F6;
-
-    --gradient-blood-first: #450A0A;
-    --gradient-blood-second: #DC2626;
-
-    /* Gradients Construction */
     --gradient-primary-color: linear-gradient(
-        to right,
-        var(--gradient-primary-first) 10%,
+        135deg,
+        var(--gradient-primary-first) 0%,
         var(--gradient-primary-second) 100%
     );
 
@@ -148,34 +125,33 @@
   }
 
   .dark-theme {
-    --background: #111219;
-    --surface: #323232;
-    --surface-response: #5D5D5D;
-    --surface-secondary: #1E1E1E;
-    --surface-secondary-response: #505050;
+    --background: #0B0B10;
+    --surface: #17171F;
+    --surface-response: #232330;
+    --surface-secondary: #1D1D27;
+    --surface-secondary-response: #2A2A38;
 
-    --scrollbar-track: #232532;
-    --scrollbar-thumb: #3A3B47;
-    --scrollbar-thumb-border: #4A4B57;
+    --scrollbar-track: #17171F;
+    --scrollbar-thumb: #33333F;
+    --scrollbar-thumb-border: #3F3F4D;
 
-    --text-primary: #898989;
-    --text-tertiary: #D1D1D1;
+    --text-primary: #F3F3F7;
+    --text-tertiary: #8C8C99;
     --icon-opacity: 20%;
 
     --icon-brightness: 0;
     --icon-invert: 100%;
     --icon-hover-invert: 0%;
 
-    --gradient-secondary-first: #00000020;
-    --gradient-secondary-second: #000000;
+    --gradient-secondary-first: #FFFFFF10;
+    --gradient-secondary-second: #FFFFFF02;
   }
 
-  /* Global Resets */
   html,
   body {
     height: 100%;
     overflow: hidden;
-    font-family: var(--font-primary), serif;
+    font-family: var(--font-primary), sans-serif;
     font-weight: 500;
     margin: 0;
     padding: 0;
@@ -215,7 +191,6 @@
     outline-offset: 2px;
   }
 
-  /* Scrollbar Styles */
   ::-webkit-scrollbar {
     width: 12px;
     height: 12px;
@@ -234,7 +209,6 @@
 }
 
 @layer components {
-  /* Gradients */
   .gradient-primary {
     background-image: var(--gradient-primary);
   }
@@ -257,14 +231,13 @@
     opacity: 0;
     transition: opacity 0.2s ease;
     z-index: -1;
-    border-radius: 8px;
+    border-radius: 12px;
   }
 
   .gradient-hover:hover::before {
     opacity: 1;
   }
 
-  /* States */
   .active {
     color: var(--text-secondary);
     background-image: var(--gradient-primary);
@@ -293,7 +266,6 @@
     border-radius: 100%;
   }
 
-  /* Utilities */
   .disabled {
     pointer-events: none;
     opacity: 0.6;
@@ -313,7 +285,6 @@
     border: 0;
   }
 
-  /* Animations Components */
   .alert {
     animation: fadeIn 0.3s ease;
   }
@@ -330,7 +301,6 @@
     animation: scaleOut 0.3s ease forwards;
   }
 
-  /* Charts */
   .chart-minimized {
     height: 120px !important;
     min-height: 120px !important;
@@ -366,7 +336,7 @@
   .spinner {
     width: 50px;
     height: 50px;
-    border: 5px solid var(--surface);
+    border: 5px solid var(--surface-secondary);
     border-top: 5px solid var(--gradient-primary-first);
     border-radius: 50%;
     animation: spin 1s linear infinite;
@@ -397,8 +367,6 @@
   filter: brightness(var(--icon-brightness)) invert(var(--icon-hover-invert));
 }
 
-
-/* Keyframes */
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }

@@ -7,9 +7,6 @@ import {
   InitManagerClear
 } from '../index.js';
 
-
-
-
 const AddTransactionDetails = {
   render() {
     InitManagerClear(DetailButtonsData)
@@ -41,25 +38,21 @@ const AddTransactionDetails = {
   },
 
   validate(data) {
-    // Check Amount
     if (!data.amount || parseFloat(data.amount) <= 0) {
       Dialog.alert("Please enter a valid amount");
       return false;
     }
 
-    // Check Category
     if (!data.category) {
       Dialog.alert("Please select a category");
       return false;
     }
 
-    // Check Currency
     if (!data.currency) {
       Dialog.alert("Please select a currency");
       return false;
     }
 
-    // Check Transaction Type (Income/Expense)
     if (!data.transactionType) {
       Dialog.alert("Please select a transaction type");
       return false;

@@ -1,4 +1,3 @@
-// TableLogic.js
 const TableLogic = {
   parseDateTime(dateStr, timeStr = "00:00") {
     if (!dateStr) return null;
@@ -17,7 +16,6 @@ const TableLogic = {
     const amount = Number(transaction.amount);
     const min = filters.priceRangeMin;
     const max = filters.priceRangeMax;
-
 
     if (min !== undefined && min !== "" && min !== null && min > 0) {
       const absoluteAmount = Math.abs(amount);

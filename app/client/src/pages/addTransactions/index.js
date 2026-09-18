@@ -1,18 +1,14 @@
-// Page templates
 export { default as PageTemplate } from '../../components/templates/pageTemplate/PageTemplate.js';
 export { default as SectionHeading } from '../../components/templates/pageTemplate/SectionHeading.js';
 
-// Button templates
 export { default as StandardButtonCreate } from '../../components/templates/buttonsTemplate/standardButton/StandardButtonCreate.js'
 export { default as SelectButtonCreate } from '../../components/templates/buttonsTemplate/selectButton/SelectButtonCreate.js';
 export { default as DateButtonCreate } from '../../components/templates/buttonsTemplate/dateTimeButton/DateTimeButtonCreate.js';
 export { default as TextButtonCreate } from '../../components/templates/buttonsTemplate/textButton/TextButtonCreate.js'
 
-// Transaction type Icons
 export { default as IncomeIcon } from '../../assets/icons/transaction/Income.svg'
 export { default as ExpenseIcon } from '../../assets/icons/transaction/Expense.svg'
 
-// Detail buttons
 export { default as AmountButton } from './addTransactionComponents/addTransactionButtons/buttons/Amount.js'
 export { default as CurrencyButton } from './addTransactionComponents/addTransactionButtons/buttons/Currency.js'
 export { default as CategoryButton } from './addTransactionComponents/addTransactionButtons/buttons/Category.js'
@@ -28,22 +24,17 @@ export { default as DetailButtonsList } from './addTransactionComponents/addTran
 export { default as DetailButtonsData } from './addTransactionComponents/addTransactionButtons/DetailButtonsData.js';
 export { default as DetailButtonsGetData } from './addTransactionComponents/addTransactionButtons/DetailButtonsGetData.js';
 
-// Utilities
 export { InitManagerCreate, InitManagerClear } from '../../components/other/Utilities.js'
 
-// Add Transaction buttons data
 export { default as CategoryButtonData } from '../../components/buttonsData/CategoryButtonData.js'
 export { default as TransactionTypeButtonData } from '../../components/buttonsData/TransactionTypeButtonData.js'
 export { default as CurrencyButtonData } from '../../components/buttonsData/CurrencyButtonData.js'
 
-// Preview transaction
 export { default as PreviewTransaction } from './addTransactionComponents/addTransactionButtons/addTransactionPreviewTable/PreviewTransaction.js';
 export { default as DetailButtonsRender } from './addTransactionComponents/addTransactionButtons/addTransactionPreviewTable/PreviewTransactionRender.js'
 
-
 export { default as AddTransactionButton } from './addTransactionComponents/addTransactionOther/AddTransactionButton.js'
 
-// API
 export { default as TransactionService } from '../../services/TransactionService.js'
 
 export { default as Dialog } from '../../components/other/Dialog.js'

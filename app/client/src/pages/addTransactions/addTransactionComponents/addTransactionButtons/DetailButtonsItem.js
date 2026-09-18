@@ -9,6 +9,3 @@ const DetailButtonsItem = {
 };
 
 export default DetailButtonsItem;
-
-
-// col-span-2

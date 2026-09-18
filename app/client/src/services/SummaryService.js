@@ -1,7 +1,6 @@
 const API_URL = `${import.meta.env.VITE_API_URL}/summary`;
 
 const SummaryService = {
-  // Fetches the dashboard summary data (Balance, Income, Spending, etc.)
   async getSummary() {
     try {
       const response = await fetch(`${API_URL}`, {

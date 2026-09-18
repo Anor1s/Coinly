@@ -1,5 +1,4 @@
 import { SectionHeading, TableUi, TransactionsTable } from "../Index.js";
-// laptop:h-include-top
 const RecentTransactions  = {
   render() {
     return `

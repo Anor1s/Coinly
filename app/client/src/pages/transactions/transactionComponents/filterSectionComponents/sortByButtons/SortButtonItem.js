@@ -9,5 +9,3 @@ const SortButtonItem = {
 };
 
 export default SortButtonItem;
-
-// sort-button is used for class-based binding
