@@ -15,14 +15,14 @@ const NavItem = {
     }
 
     return `
-      <li>
+      <li class="shrink-0">
         <a
           href="${item.href}"
           class="flex items-center gap-xs px-[12px] tablet:px-[16px] h-[40px] rounded-full whitespace-nowrap ${itemClasses}"
           data-link
           >
           <img
-            class="group-hover:brightness-0 w-[24px] h-[24px] tablet:w-[22px] tablet:h-[22px]"
+            class="group-hover:brightness-0 w-[24px] h-[24px] tablet:w-[22px] tablet:h-[22px] shrink-0"
             data-icon-link
             src="${item.icon}"
             alt="${item.alt}"
