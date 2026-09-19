@@ -48,30 +48,30 @@ const Transaction = {
           id="${transactionData.id}"
         >
           <div class="w-full flex flex-row justify-between gap-sm">
-            <div class="h-full flex flex-row gap-sm items-center">
+            <div class="h-full flex flex-row gap-sm items-center min-w-0">
               <img
-                class="icon" 
-                src="${iconSrc}" 
+                class="icon shrink-0"
+                src="${iconSrc}"
                 alt="icon"
                 width="24"
                 height="24"
                 loading="lazy"
               />
-              <span class="text-text-tertiary text-base mobile:text-lg laptop:text-xl">
+              <span class="text-text-tertiary text-base mobile:text-lg laptop:text-xl truncate">
                 ${categoryText}
               </span>
             </div>
-            
-            <div class="flex flex-row gap-sm items-center">
-              <img 
-                src="${typeIcon}"  
+
+            <div class="flex flex-row gap-sm items-center shrink-0">
+              <img
+                src="${typeIcon}"
                 alt="icon"
                 width="24"
                 height="24"
                 title="${transactionData.transactionType}"
                 loading="lazy"
               />
-              <span class="text-text-tertiary text-base mobile:text-lg laptop:text-xl">
+              <span class="text-text-tertiary text-base mobile:text-lg laptop:text-xl whitespace-nowrap">
                 ${displaySymbol}\u00A0${formattedAmount}
               </span>
             </div>

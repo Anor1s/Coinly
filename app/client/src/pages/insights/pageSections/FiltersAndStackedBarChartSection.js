@@ -10,7 +10,7 @@ const FiltersAndStackedBarChartSection = {
   render() {
     return `
       <section class="h-full w-full flex flex-col gap-base">
-        <div class="h-fit w-full flex flex-col gap-sm">
+        <div class="h-fit w-full flex flex-col gap-sm mobile:flex-row mobile:items-center mobile:justify-between">
           ${SectionHeading.render('Budget Allocation')}
           <button
             type="button"

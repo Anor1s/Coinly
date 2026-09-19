@@ -9,7 +9,7 @@ const TransactionsSection = {
   render() {
     return `
       <section class="h-screen-pad laptop:h-include-top w-full flex flex-col gap-sm">
-        <div class="flex flex-col gap-sm">
+        <div class="flex flex-col gap-sm mobile:flex-row mobile:items-center mobile:justify-between">
           ${SectionHeading.render('All transactions')}
           <button
             type="button"
