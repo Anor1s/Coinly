@@ -33,7 +33,7 @@ const NavItem = {
           />
           <span
             class="group-hover:text-black transition-colors duration-200
-                    hidden tablet:block text-sm tablet:text-base"
+                    hidden laptop:block text-sm tablet:text-base"
           >
             ${item.text}
           </span>
