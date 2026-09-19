@@ -10,12 +10,12 @@ const FiltersAndStackedBarChartSection = {
   render() {
     return `
       <section class="h-full w-full flex flex-col gap-base">
-        <div class="h-fit w-full flex items-center justify-between gap-base">
+        <div class="h-fit w-full flex flex-col gap-sm">
           ${SectionHeading.render('Budget Allocation')}
           <button
             type="button"
             id="open-time-range-btn"
-            class="px-[16px] h-button rounded-md gradient-primary text-text-secondary font-bold shrink-0"
+            class="px-[16px] h-button rounded-md gradient-primary text-text-secondary font-bold w-fit"
           >
             Time Range
           </button>

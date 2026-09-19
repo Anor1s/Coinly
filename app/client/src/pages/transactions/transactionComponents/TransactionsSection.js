@@ -9,12 +9,12 @@ const TransactionsSection = {
   render() {
     return `
       <section class="h-screen-pad laptop:h-include-top w-full flex flex-col gap-sm">
-        <div class="flex items-center justify-between gap-base">
+        <div class="flex flex-col gap-sm">
           ${SectionHeading.render('All transactions')}
           <button
             type="button"
             id="open-add-transaction-btn"
-            class="flex items-center gap-xs px-[16px] h-button rounded-md gradient-primary text-text-secondary font-bold shrink-0"
+            class="flex items-center justify-center gap-xs px-[16px] h-button rounded-md gradient-primary text-text-secondary font-bold w-fit"
           >
             <div
               class="w-6 h-6 bg-text-secondary"
