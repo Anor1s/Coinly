@@ -22,7 +22,7 @@ const NavItem = {
           data-link
           >
           <img
-            class="group-hover:brightness-0 w-[18px] h-[18px] tablet:w-[20px] tablet:h-[20px]"
+            class="group-hover:brightness-0 w-[24px] h-[24px] tablet:w-[22px] tablet:h-[22px]"
             data-icon-link
             src="${item.icon}"
             alt="${item.alt}"
