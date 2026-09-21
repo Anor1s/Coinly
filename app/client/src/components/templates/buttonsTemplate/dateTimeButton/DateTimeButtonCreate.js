@@ -76,6 +76,14 @@ const DateTimeButtonCreate = {
 
     const [date, time] = input.value.split('T');
     return { date: date || '', time: time || '' };
+  },
+
+  reset(buttonId) {
+    const input = document.getElementById(buttonId);
+    if (input) {
+      input.value = '';
+      input.removeAttribute('value');
+    }
   }
 };
 

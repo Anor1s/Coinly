@@ -12,6 +12,10 @@ const TransactionPlaceButton = {
 
   getValue() {
     return TextButtonCreate.getValue(ButtonConfig);
+  },
+
+  reset() {
+    TextButtonCreate.reset(ButtonConfig);
   }
 };
 

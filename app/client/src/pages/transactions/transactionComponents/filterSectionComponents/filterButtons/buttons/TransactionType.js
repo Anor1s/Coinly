@@ -12,6 +12,10 @@ const TransactionTypeButton = {
 
   getValue() {
     return SelectButtonCreate.getValue(ButtonConfig.buttonId).value;
+  },
+
+  reset() {
+    SelectButtonCreate.reset(ButtonConfig.buttonId);
   }
 };
 

@@ -121,6 +121,13 @@ const SelectButtonCreate = {
       text: label ? label.textContent.trim() : '',
       value: input ? input.value : ''
     };
+  },
+
+  reset(buttonId) {
+    const input = document.querySelector(`.selected-option[data-button-id="${buttonId}"]`);
+    const label = document.querySelector(`.selected-value[data-button-id="${buttonId}"]`);
+    if (input) input.value = '';
+    if (label) label.textContent = 'Select option';
   }
 };
 

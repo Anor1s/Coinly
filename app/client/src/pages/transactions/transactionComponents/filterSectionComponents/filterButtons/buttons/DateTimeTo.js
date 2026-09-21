@@ -17,6 +17,10 @@ const DateTimeToButton = {
 
   getValues() {
     return DateButtonCreate.getValues(ButtonConfig.buttonId);
+  },
+
+  reset() {
+    DateButtonCreate.reset(ButtonConfig.buttonId);
   }
 };
 

@@ -23,6 +23,10 @@ const CategoryButton = {
       text: foundItem?.text || '',
       icon: foundItem?.icon || '' ,
     }
+  },
+
+  reset() {
+    SelectButtonCreate.reset(ButtonConfig.buttonId);
   }
 };
 

@@ -35,6 +35,7 @@ export { default as PriceRangeButton } from './transactionComponents/filterSecti
 export { default as FilterButtonsData } from './transactionComponents/filterSectionComponents/filterButtons/FilterButtonsData.js';
 export { default as FilterButtonsList } from './transactionComponents/filterSectionComponents/filterButtons/FilterButtonsList.js';
 export { default as FilterButtonsGetData } from './transactionComponents/filterSectionComponents/filterButtons/FilterButtonsGetData.js'
+export { default as FilterButtonsReset } from './transactionComponents/filterSectionComponents/filterButtons/FilterButtonsReset.js'
 export { default as FilterButtonItem } from './transactionComponents/filterSectionComponents/filterButtons/FilterButtonsItem.js';
 
 export { default as CategoryButtonData } from '../../components/buttonsData/CategoryButtonData.js'

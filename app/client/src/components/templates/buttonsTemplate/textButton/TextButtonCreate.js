@@ -45,6 +45,11 @@ const TextButtonCreate = {
   getValue(ButtonConfig) {
     const input = document.getElementById(ButtonConfig.buttonId);
     return input ? input.value.trim() : '';
+  },
+
+  reset(ButtonConfig) {
+    const input = document.getElementById(ButtonConfig.buttonId);
+    if (input) input.value = '';
   }
 };
 
