@@ -1,35 +1,36 @@
 import TransactionService  from '../services/TransactionService.js';
 
 const TransactionStore = {
-  cache: {},
-  lastRequestKey: null,
+  data: null,
+  pending: null,
 
-  async fetchTransactions(page, limit) {
-    const cacheKey = `${page}-${limit}`;
-    this.lastRequestKey = cacheKey;
-
-    if (this.cache[cacheKey]) {
-      return this.cache[cacheKey];
+  async fetchTransactions() {
+    if (this.data) {
+      return this.data;
     }
 
-    try {
-      const response = await TransactionService.getAll(page, limit);
-
-      if (this.lastRequestKey !== cacheKey) {
-        return null;
-      }
-
-      this.cache[cacheKey] = response;
-      return response;
-    } catch (err) {
-      console.error("Store error:", err);
-      throw err;
+    if (this.pending) {
+      return this.pending;
     }
+
+    this.pending = TransactionService.getAll()
+      .then(response => {
+        this.data = response;
+        this.pending = null;
+        return response;
+      })
+      .catch(err => {
+        this.pending = null;
+        console.error("Store error:", err);
+        throw err;
+      });
+
+    return this.pending;
   },
 
   clearCache() {
-    this.cache = {};
-    this.lastRequestKey = null;
+    this.data = null;
+    this.pending = null;
   }
 };
 

@@ -1,9 +1,9 @@
 const API_URL = `${import.meta.env.VITE_API_URL}/transactions`;
 
 const TransactionService = {
-  async getAll(page = 1, limit = 20) {
+  async getAll() {
     try {
-      const response = await fetch(`${API_URL}/AllTransactions?page=${page}&limit=${limit}`, {
+      const response = await fetch(`${API_URL}/AllTransactions`, {
         method: 'GET',
         credentials: 'include',
         headers: { 'Content-Type': 'application/json' },

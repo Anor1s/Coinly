@@ -5,6 +5,7 @@ import {
   DateTimeToButton,
   TransactionTypeButton,
   TransactionPlaceButton,
+  SearchBar,
   AppStore
 } from "../../../index.js";
 
@@ -13,6 +14,7 @@ function FilterButtonsGetData() {
 
   return {
     currentCurrency: currentGlobalCurrency,
+    search: SearchBar.getValue?.() || '',
     priceRangeMin: PriceRangeButton.getValues?.().min || 0,
     priceRangeMax: PriceRangeButton.getValues?.().max || Infinity,
     category: {

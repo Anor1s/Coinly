@@ -1,3 +1,7 @@
+import { CategoryButtonData } from '../../../index.js';
+
+const categoryTextMap = new Map(CategoryButtonData.map(item => [item.value, item.text]));
+
 const TableLogic = {
   parseDateTime(dateStr, timeStr = "00:00") {
     if (!dateStr) return null;
@@ -13,7 +17,7 @@ const TableLogic = {
   },
 
   isFilteredOut(transaction, filters) {
-    const amount = Number(transaction.amount);
+    const amount = Number(transaction.amount_base ?? transaction.amount);
     const min = filters.priceRangeMin;
     const max = filters.priceRangeMax;
 
@@ -50,6 +54,17 @@ const TableLogic = {
       const fPlace = filters.transactionPlace.toLowerCase().trim();
       const tPlace = (transaction.place || "").toLowerCase().trim();
       if (!tPlace.includes(fPlace)) {
+        return true;
+      }
+    }
+
+    if (filters.search && filters.search.trim() !== "") {
+      const term = filters.search.toLowerCase().trim();
+      const categoryText = (categoryTextMap.get(transaction.category) || transaction.category || "").toLowerCase();
+      const place = (transaction.place || "").toLowerCase();
+      const note = (transaction.note || "").toLowerCase();
+
+      if (!categoryText.includes(term) && !place.includes(term) && !note.includes(term)) {
         return true;
       }
     }
@@ -122,7 +137,7 @@ const TableLogic = {
         let result = 0;
         switch(field) {
           case 'amount':
-            result = (Number(a.amount) - Number(b.amount)) * order;
+            result = (Number(a.amount_base ?? a.amount) - Number(b.amount_base ?? b.amount)) * order;
             break;
           case 'category':
             result = (a.category || '').localeCompare(b.category || '') * order;
